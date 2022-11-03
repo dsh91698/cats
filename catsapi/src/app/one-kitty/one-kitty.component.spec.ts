@@ -8,9 +8,9 @@ describe('OneKittyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OneKittyComponent ]
+      declarations: [ OneKittyComponent ],
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(OneKittyComponent);
     component = fixture.componentInstance;

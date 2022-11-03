@@ -4,11 +4,10 @@ import { OneKittyComponent } from './one-kitty/one-kitty.component';
 
 const routes: Routes = [
   { path: '', component: OneKittyComponent }, // core
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

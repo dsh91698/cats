@@ -9,14 +9,14 @@ import { OneKittyComponent } from './one-kitty/one-kitty.component';
 @NgModule({
   declarations: [
     AppComponent,
-    OneKittyComponent
+    OneKittyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

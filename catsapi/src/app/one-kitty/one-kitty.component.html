@@ -1,1 +1,8 @@
-<p>one-kitty works!</p>
+
+<div class="random-kitty__card">
+    <h2>Look at this nice kitty!</h2>
+    <img [src]="oneRandomeKittyUrl" alt="nice randome kitty" class="random-kitty__img">
+    <button type="submit" class="get-random-kitty__btn"
+    (click)="getNewKitty()"
+    >Get new kitty!</button>
+</div>

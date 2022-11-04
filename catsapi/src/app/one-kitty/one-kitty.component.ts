@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IOneKitty } from '../interfaces/IOneKitty';
 import { OneKittyService } from './one-kitty.service';
 
-interface IOneKitty {
-  id: string,
-  url: string,
-  width: number,
-  height: number,
-};
 
 @Component({
   selector: 'app-one-kitty',

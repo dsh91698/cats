@@ -15,6 +15,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CatSetComponent } from './components/cat-set/cat-set.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,6 +36,8 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     MatIconModule,
     MatSelectModule,
     MatFormFieldModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [
     {

@@ -1,16 +1,43 @@
+<mat-toolbar color="primary">
+
+  <mat-toolbar-row>
+    <!-- <span class="title-center">form will be there</span> -->
+
+    <form class="login-form" [formGroup]="form">
+
+      <div class="input__wrapper">
+        <label for="breed">breed:</label>
+        <input type="text" id="breed" name="breed" formControlName="breed">
+        <div class="validation" *ngIf="form.get('breed')?.invalid && form.get('breed')?.dirty">
+          <small *ngIf="form.hasError('required', ['breed'])">
+            Please enter a cat's breed
+          </small>
+        </div>
+      </div>
+
+      <div class="input__wrapper">
+        <label for="quantity">How many cats?:</label>
+        <input type="text" id="quantity" name="quantity" formControlName="quantity">
+        <div class="validation" *ngIf="form.get('quantity')?.invalid && form.get('quantity')?.dirty">
+          <small *ngIf="form.hasError('required', ['quantity'])">
+            Please enter a cat's breed
+          </small>
+        </div>
+      </div>
+
+    </form>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 
-  <mat-card class="kitty__card"
-  *ngFor="let catCard of this.breedService.setOfCats"
-  >
+<mat-card class="kitty__card" *ngFor="let catCard of this.breedService.setOfCats">
 
-    <mat-card-header>
-        <mat-card-title
-        >Breed: {{catCard.breeds[0].name || 'unknown'}}</mat-card-title>
-    </mat-card-header>
+  <mat-card-header>
+    <mat-card-title>Breed: {{catCard.breeds[0].name || 'unknown'}}</mat-card-title>
+  </mat-card-header>
 
-    <mat-card-content>
-        <img [src]="catCard.url" alt="nice randome kitty" class="random-kitty__img">
-    </mat-card-content>
+  <mat-card-content>
+    <img [src]="catCard.url" alt="nice randome kitty" class="random-kitty__img">
+  </mat-card-content>
 
 </mat-card>

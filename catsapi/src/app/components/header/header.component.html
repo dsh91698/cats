@@ -1,27 +1,11 @@
 <mat-toolbar class="header-toolbar" color="primary">
 
   <mat-toolbar-row>
-    <mat-icon>home</mat-icon>
+
     <span class="title-center">{{ title | titlecase}} </span>
+    <button mat-flat-button color="accent" type="submit" class="nav__btn" (click)="this.getCatsPhotoSet()">Get new cats set!</button>
+    <button mat-flat-button color="accent" type="submit" class="nav__btn" (click)="this.navigateToMainpage()">Get one kitty!</button>
 
-    <button mat-flat-button
-    color="accent" type="submit"
-    class="nav__btn"
-    (click)="this.getCatsPhotoSet()">Get new cats set!
-</button>
-
-    <button mat-flat-button
-    color="accent" type="submit"
-    class="nav__btn"
-    (click)="this.navigateToMainpage()">Get one kitty!
-</button>
-
-
-  </mat-toolbar-row>
-
-  <mat-toolbar-row>
-    <span class="title-center">form will be there</span>
   </mat-toolbar-row>
 
 </mat-toolbar>
-

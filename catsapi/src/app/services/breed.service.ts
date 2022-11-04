@@ -29,12 +29,7 @@ export class BreedService {
   // }
 
   public getCatPhotos(): Observable<any> {
-    return this.http.get(`https://api.thecatapi.com/v1/images/search?limit=${this.searchLimit}&breed_ids=${this.breed}`, {
-      headers: {
-        'x-api-key':
-          'live_4wKIZj63d0cfWTAKiJDaQLQosdxjE8s8gDEFQaOOqnDDRaOrWDvtOBgUlGGK2hkO',
-      },
-    });
+    return this.http.get(`https://api.thecatapi.com/v1/images/search?limit=${this.searchLimit}&breed_ids=${this.breed}`);
   }
 
 }

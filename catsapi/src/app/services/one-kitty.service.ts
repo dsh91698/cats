@@ -13,7 +13,7 @@ export class OneKittyService {
   constructor(private http: HttpClient) {}
 
   public getRandomKitty(): Observable<any> {
-    return this.http.get(`https://api.thecatapi.com/v1/images/search`, {
+    return this.http.get('https://api.thecatapi.com/v1/images/search', {
       headers: {
         'x-api-key':
           'live_4wKIZj63d0cfWTAKiJDaQLQosdxjE8s8gDEFQaOOqnDDRaOrWDvtOBgUlGGK2hkO',

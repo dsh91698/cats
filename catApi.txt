@@ -1,0 +1,23 @@
+The Cat API - API Key
+
+Thanks for signing up, welcome to the The Cat API!
+
+Here's your API key:
+
+live_4wKIZj63d0cfWTAKiJDaQLQosdxjE8s8gDEFQaOOqnDDRaOrWDvtOBgUlGGK2hkO
+
+Use it as the 'x-api-key' header when making any request to the API, or by adding as a query string parameter e.g. 'api_key=live_4wKIZj63d0cfWTAKiJDaQLQosdxjE8s8gDEFQaOOqnDDRaOrWDvtOBgUlGGK2hkO'
+
+More details on authentication →
+
+📙 Useful links
+API Documentation // Postman Collection // Join our  channel
+
+
+📣 📣 📣 Thinking of building your own API?
+Designing and coding a cool new API is the easy part. But what about the auth management and rate limiting?
+
+Did you know, the The Cat API launched in 2012, and we've had over 30k signups since launching?
+
+That's a lot of requests and a lot of API keys we've generated (including yours 👆 😀 ). We've taken that learning and built a lightweight SDK to solve how you handle your API keys and rate limiting (plus a bunch of other really cool features).
+

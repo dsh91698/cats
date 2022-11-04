@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IOneKitty } from '../interfaces/IOneKitty';
-import { OneKittyService } from './one-kitty.service';
+import { IOneKitty } from '../../interfaces/IOneKitty';
+import { OneKittyService } from '../../services/one-kitty.service';
 
 
 @Component({

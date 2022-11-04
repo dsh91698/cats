@@ -11,7 +11,7 @@ export class BreedService {
 
   public searchLimit = 6;
 
-  public breed = 'beng';
+  public breed = '';
 
   public setOfCats: IOneKitty[] = [];
 
@@ -29,7 +29,11 @@ export class BreedService {
   // }
 
   public getCatPhotos(): Observable<any> {
-    return this.http.get(`https://api.thecatapi.com/v1/images/search?limit=${this.searchLimit}&breed_ids=${this.breed}`);
+    if (this.breed) {
+      return this.http.get(`https://api.thecatapi.com/v1/images/search?limit=${this.searchLimit}&breed_ids=${this.breed}`);
+    } else {
+      return this.http.get(`https://api.thecatapi.com/v1/images/search?limit=${this.searchLimit}&has_breeds=1`);
+    }
   }
 
 }

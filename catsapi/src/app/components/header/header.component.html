@@ -4,10 +4,16 @@
     <mat-icon>home</mat-icon>
     <span class="title-center">{{ title | titlecase}} </span>
 
-    <button mat-raised-button 
-    color="primary" type="submit" 
-    class="get-random-kitty__btn" 
+    <button mat-flat-button
+    color="accent" type="submit"
+    class="nav__btn"
     (click)="this.getCatsPhotoSet()">Get new cats set!
+</button>
+
+    <button mat-flat-button
+    color="accent" type="submit"
+    class="nav__btn"
+    (click)="this.navigateToMainpage()">Get one kitty!
 </button>
 
 

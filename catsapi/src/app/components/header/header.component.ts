@@ -33,5 +33,9 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  public navigateToMainpage(): void {
+    this.router.navigateByUrl('');
+  }
+
 
 }

@@ -8,6 +8,8 @@ import { OneKittyComponent } from './one-kitty/one-kitty.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from "@angular/material/card";
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from "@angular/material/icon";
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { MatCardModule } from "@angular/material/card";
     HttpClientModule,
     MatButtonModule,
     MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

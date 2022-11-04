@@ -10,8 +10,6 @@ import { OneKittyService } from '../../services/one-kitty.service';
 })
 export class OneKittyComponent implements OnInit {
 
-
-  
   public oneRandomeKittyUrl = '';
 
   constructor(private oneKittyService: OneKittyService) {}

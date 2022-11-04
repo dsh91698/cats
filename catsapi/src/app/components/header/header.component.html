@@ -3,6 +3,14 @@
   <mat-toolbar-row>
     <mat-icon>home</mat-icon>
     <span class="title-center">{{ title | titlecase}} </span>
+
+    <button mat-raised-button 
+    color="primary" type="submit" 
+    class="get-random-kitty__btn" 
+    (click)="this.getCatsPhotoSet()">Get new cats set!
+</button>
+
+
   </mat-toolbar-row>
 
   <mat-toolbar-row>

@@ -1,0 +1,13 @@
+mat-toolbar {
+    display: flex;
+}
+
+mat-toolbar-row {
+    display: flex;
+    align-items: center;
+}
+
+.title-center {
+    padding-top: 3px;
+    margin-left: 5px;
+}

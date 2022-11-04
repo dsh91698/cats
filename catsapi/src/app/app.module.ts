@@ -10,12 +10,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from "@angular/material/card";
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from "@angular/material/icon";
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     OneKittyComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

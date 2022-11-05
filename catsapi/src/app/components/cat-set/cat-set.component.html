@@ -7,7 +7,7 @@
 
       <div class="input__wrapper">
         <label for="breed">breed:</label>
-        <input type="text" id="breed" name="breed" formControlName="breed">
+        <input type="text" id="breed" name="breed" formControlName="breed" [formControl]='this.breedService.breedInput'>
         <div class="validation" *ngIf="form.get('breed')?.invalid && form.get('breed')?.dirty">
           <small *ngIf="form.hasError('required', ['breed'])">
             Please enter a cat's breed
@@ -17,7 +17,7 @@
 
       <div class="input__wrapper">
         <label for="quantity">How many cats?:</label>
-        <input type="text" id="quantity" name="quantity" formControlName="quantity">
+        <input type="number" id="quantity" name="quantity" formControlName="quantity">
         <div class="validation" *ngIf="form.get('quantity')?.invalid && form.get('quantity')?.dirty">
           <small *ngIf="form.hasError('required', ['quantity'])">
             Please enter a cat's breed

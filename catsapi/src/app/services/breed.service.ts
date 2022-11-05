@@ -13,7 +13,7 @@ export class BreedService {
   public breedInput = new FormControl();
 
 
-  public searchLimit = 6;
+  public searchLimit:number = 6;
 
   public breed = '';
 

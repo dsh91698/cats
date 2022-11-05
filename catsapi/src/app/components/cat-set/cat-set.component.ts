@@ -29,7 +29,7 @@ export class CatSetComponent implements OnInit {
         Validators.required,
       ]),
 
-      quantity: new FormControl(10, [
+      quantity: new FormControl(this.breedService.searchLimit, [
         Validators.required,
       ]),
     });
@@ -46,9 +46,7 @@ export class CatSetComponent implements OnInit {
       debounceTime(1500),
     ).subscribe(
       searchPhrase => {
-        console.log('breed input->', searchPhrase);
         const foundBreed = this.breedService.findBreedIds(searchPhrase, this.allBreedsObj);
-        console.log('found breed->', foundBreed);
         this.breedService.breed = foundBreed.id;
         this.breedService.getCatsPhotoSet();
 

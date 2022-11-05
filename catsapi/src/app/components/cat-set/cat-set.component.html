@@ -17,7 +17,7 @@
 
       <div class="input__wrapper">
         <label for="quantity">How many cats?:</label>
-        <input type="number" id="quantity" name="quantity" formControlName="quantity">
+        <input type="number" id="quantity" name="quantity" formControlName="quantity" [(ngModel)]="this.breedService.searchLimit">
         <div class="validation" *ngIf="form.get('quantity')?.invalid && form.get('quantity')?.dirty">
           <small *ngIf="form.hasError('required', ['quantity'])">
             Please enter a cat's breed
